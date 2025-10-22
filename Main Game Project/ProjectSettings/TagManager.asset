@@ -8,6 +8,7 @@ TagManager:
   - Water
   - Fire Coin
   - Water Coin
+  - Swamp
   layers:
   - Default
   - TransparentFX

@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+ using UnityEngine.UI;
 
-public class Swamp : MonoBehaviour
+public class PlayButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +15,10 @@ public class Swamp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+    
+    }
+    void OnMouseDown() {
+        SceneManager.LoadScene("Level 1");
+        Debug.Log("Object clicked!");
     }
 }
