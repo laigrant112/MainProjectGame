@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4090721127014876396}
   - component: {fileID: 1996484540721089154}
   m_Layer: 0
-  m_Name: Orange Lever
+  m_Name: Green Lever
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1a2010660779542a0aab2c918813aa8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 99353384fa51a4d1a857a261fa46b763, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -122,7 +122,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 323c0e46ab5d3499fa91afc47b3f1584, type: 2}
+    - {fileID: 11400000, guid: 5337898b7ba1d4f3c83f55ab81e72e4d, type: 2}
 --- !u!61 &1996484540721089154
 BoxCollider2D:
   m_ObjectHideFlags: 0

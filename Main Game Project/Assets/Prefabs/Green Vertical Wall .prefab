@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5630948997863728368}
   - component: {fileID: 1759550192217100798}
   m_Layer: 0
-  m_Name: 'Orange Vertical Wall '
+  m_Name: 'Green Vertical Wall '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

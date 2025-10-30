@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1a2010660779542a0aab2c918813aa8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bac27a3a4bad345b297b8b291e63cc23, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -103,10 +103,12 @@ MonoBehaviour:
     _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"LeverOn","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"LeverOff","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"IsOn?","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Wall","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 21300000, guid: 70e175c3a0847413991c006156b5ffba, type: 3}
-    - {fileID: 21300000, guid: 1a2010660779542a0aab2c918813aa8b, type: 3}
+    - {fileID: 21300000, guid: 8d6a10541cbc8491b916c3721a7a711e, type: 3}
+    - {fileID: 21300000, guid: bac27a3a4bad345b297b8b291e63cc23, type: 3}
+    - {fileID: 3832174567604248715, guid: d62db3c92f4f74b22ba8eb8f774fc32d, type: 3}
 --- !u!114 &4090721127014876396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,7 +124,7 @@ MonoBehaviour:
   _data:
     _json: '{"nest":{"source":"Macro","macro":0,"embed":null}}'
     _objectReferences:
-    - {fileID: 11400000, guid: 323c0e46ab5d3499fa91afc47b3f1584, type: 2}
+    - {fileID: 11400000, guid: 358c36fffda2943bca381229aced2245, type: 2}
 --- !u!61 &1996484540721089154
 BoxCollider2D:
   m_ObjectHideFlags: 0
