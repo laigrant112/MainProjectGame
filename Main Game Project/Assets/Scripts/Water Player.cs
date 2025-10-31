@@ -8,6 +8,8 @@ public class WaterPlsyer : MonoBehaviour
     [SerializeField] float jumpForce;
     [SerializeField] Rigidbody2D rb2d;
     // Start is called before the first frame update
+    [SerializeField] float jumpCooldown = 0.5f; // cooldown in seconds
+    private float jumpTimer = 0f; // counts down
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -15,6 +17,9 @@ public class WaterPlsyer : MonoBehaviour
 
     void Update()
     {
+        if (jumpTimer > 0)
+            jumpTimer -= Time.deltaTime;
+            
         if(Input.GetKey(KeyCode.A))
         {
         Move();
@@ -23,8 +28,9 @@ public class WaterPlsyer : MonoBehaviour
         {
         Move();
         }
-        if (Input.GetKeyDown(KeyCode.W)){
+        if (Input.GetKeyDown(KeyCode.W) && jumpTimer <= 0f){
             Jump();
+            jumpTimer = jumpCooldown;
             
         }
     }

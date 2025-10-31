@@ -7,6 +7,10 @@ public class NewBehaviourScript : MonoBehaviour
     [SerializeField] float moveSpeed;
     [SerializeField] float jumpForce;
     [SerializeField] Rigidbody2D rb2d;
+
+    [SerializeField] float jumpCooldown = 0.5f; // cooldown in seconds
+    private float jumpTimer = 0f; // counts down
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,17 +20,22 @@ public class NewBehaviourScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Update jump timer
+        if (jumpTimer > 0)
+            jumpTimer -= Time.deltaTime;
+
         if(Input.GetKey(KeyCode.LeftArrow))
         {
-        Move();
+            Move();
         }
-           if(Input.GetKey(KeyCode.RightArrow))
+        if(Input.GetKey(KeyCode.RightArrow))
         {
-        Move();
+            Move();
         }
-        if (Input.GetKeyDown(KeyCode.UpArrow)){
+        if (Input.GetKeyDown(KeyCode.UpArrow) && jumpTimer <= 0f)
+        {
             Jump();
-            
+            jumpTimer = jumpCooldown; // reset cooldown
         }
     }
 
@@ -37,7 +46,7 @@ public class NewBehaviourScript : MonoBehaviour
         transform.Translate(movementVector);
     }
 
-     void Jump()
+    void Jump()
     {
         rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }

@@ -595,6 +595,7 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 7
   rb2d: {fileID: 718614724}
+  jumpCooldown: 1.4
 --- !u!50 &718614724
 Rigidbody2D:
   serializedVersion: 4
@@ -1598,6 +1599,7 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 7
   rb2d: {fileID: 1168201068}
+  jumpCooldown: 1.4
 --- !u!1 &1184178604
 GameObject:
   m_ObjectHideFlags: 0
