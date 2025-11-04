@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class WaterPlsyer : MonoBehaviour
+public class WaterPlayer : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
-    [SerializeField] float jumpForce;
+    [SerializeField] float moveSpeed = 5f;
+    [SerializeField] float jumpForce = 5f;
     [SerializeField] Rigidbody2D rb2d;
-    // Start is called before the first frame update
-    [SerializeField] float jumpCooldown = 0.5f; // cooldown in seconds
-    private float jumpTimer = 0f; // counts down
+    [SerializeField] float jumpCooldown = 0.5f;
+    private float jumpTimer = 0f;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -19,31 +17,29 @@ public class WaterPlsyer : MonoBehaviour
     {
         if (jumpTimer > 0)
             jumpTimer -= Time.deltaTime;
-            
-        if(Input.GetKey(KeyCode.A))
+
+        float moveDir = 0f;
+        if (Input.GetKey(KeyCode.A)) moveDir = -1f;
+        if (Input.GetKey(KeyCode.D)) moveDir = 1f;
+
+        Move(moveDir);
+
+        if (Input.GetKeyDown(KeyCode.W) && jumpTimer <= 0f)
         {
-        Move();
-        }
-           if(Input.GetKey(KeyCode.D))
-        {
-        Move();
-        }
-        if (Input.GetKeyDown(KeyCode.W) && jumpTimer <= 0f){
             Jump();
             jumpTimer = jumpCooldown;
-            
         }
     }
 
-    void Move()
+    void Move(float dir)
     {
-        float x = Input.GetAxis("Horizontal");
-        Vector2 movementVector = new Vector2(x, 0) * Time.deltaTime * moveSpeed;
+        Vector2 movementVector = new Vector2(dir, 0f) * moveSpeed * Time.deltaTime;
         transform.Translate(movementVector);
     }
 
-     void Jump()
+    void Jump()
     {
         rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
     }
 }
+
