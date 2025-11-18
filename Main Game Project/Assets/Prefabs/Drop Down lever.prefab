@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1645085813, guid: 468760cb42ad84c0694a2a4f082bc86d, type: 3}
+  m_Sprite: {fileID: -2062959127, guid: 6a8e507ce9d994386981e48a8b53210f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,11 +104,13 @@ MonoBehaviour:
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"LeverOff","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Sprite,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"IsOn?","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"Wall","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"Wall2","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
-    - {fileID: 1645085813, guid: 468760cb42ad84c0694a2a4f082bc86d, type: 3}
-    - {fileID: 1645085813, guid: 468760cb42ad84c0694a2a4f082bc86d, type: 3}
-    - {fileID: 6818437114334193045, guid: c14e8923a19974babb2135f8b3cf9b05, type: 3}
+    - {fileID: 53029626, guid: 6a8e507ce9d994386981e48a8b53210f, type: 3}
+    - {fileID: -2062959127, guid: 6a8e507ce9d994386981e48a8b53210f, type: 3}
+    - {fileID: 0}
+    - {fileID: 0}
 --- !u!114 &886173167846224575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,8 +162,8 @@ BoxCollider2D:
   m_Offset: {x: 0.6, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0.5}
-    oldSize: {x: 1.2, y: 1.2}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
