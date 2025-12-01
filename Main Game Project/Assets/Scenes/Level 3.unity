@@ -502,10 +502,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1678685086082911297, guid: 84d52830b126348f98ab240e923ebf0b, type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3085063023727204517, guid: 84d52830b126348f98ab240e923ebf0b, type: 3}
       propertyPath: m_Name
       value: Red Gem (9)
