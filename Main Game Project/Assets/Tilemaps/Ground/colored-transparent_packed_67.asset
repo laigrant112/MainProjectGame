@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: colored-transparent_packed_67
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 1902650953, guid: 6a8e507ce9d994386981e48a8b53210f, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.2944053, g: 0.6886792, b: 0.11369702, a: 1}
   m_Transform:
     e00: 1
     e01: 0
