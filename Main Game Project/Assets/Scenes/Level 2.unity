@@ -179,6 +179,16 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f385362e5ea27475a8092c6a342a0818, type: 3}
+--- !u!82 &11460207 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3993963760938309637, guid: f385362e5ea27475a8092c6a342a0818, type: 3}
+  m_PrefabInstance: {fileID: 11460206}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &11460208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7335169316856912933, guid: f385362e5ea27475a8092c6a342a0818, type: 3}
+  m_PrefabInstance: {fileID: 11460206}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &38073741
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -505,6 +515,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5327b88addcc54bd994a8d635af11750, type: 3}
+--- !u!82 &175952517 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6761776519601053500, guid: 5327b88addcc54bd994a8d635af11750, type: 3}
+  m_PrefabInstance: {fileID: 175952516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &176594045
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1656,9 +1671,21 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"BlueDoorTriggered","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"BlueKeyObtained","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"RedKeyObtained","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"BlueGemSoound","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AudioSource,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"RedGemSound","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AudioSource,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"BlueKeySound","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AudioSource,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"RedKeySound","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.AudioSource,
+      UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"fireplayer","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"waterplayer","value":{"$content":6,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1050340059}
+    - {fileID: 175952517}
+    - {fileID: 11460207}
+    - {fileID: 175952517}
+    - {fileID: 11460207}
+    - {fileID: 11460208}
+    - {fileID: 993123799}
 --- !u!4 &447470422
 Transform:
   m_ObjectHideFlags: 0
@@ -9125,6 +9152,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &993123799 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7592094428611902346, guid: 5327b88addcc54bd994a8d635af11750, type: 3}
+  m_PrefabInstance: {fileID: 175952516}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &996250382
 PrefabInstance:
   m_ObjectHideFlags: 0
