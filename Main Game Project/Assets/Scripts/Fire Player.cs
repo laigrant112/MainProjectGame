@@ -70,7 +70,6 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Move(moveDir);
     }
-
     void Move(float dir)
     {
         // use Rigidbody2D velocity instead of Translate so slopes are smooth
@@ -78,7 +77,6 @@ public class NewBehaviourScript : MonoBehaviour
         v.x = dir * moveSpeed;   // no Time.deltaTime here; velocity is units per second
         rb2d.velocity = v;
     }
-
     void Jump()
     {
         rb2d.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
